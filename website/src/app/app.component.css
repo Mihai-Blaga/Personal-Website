@@ -1,29 +1,69 @@
-.welcome {
+.header {
   height: 100%;
   width: 100%;
-  /* border: 1px; */
-  /* border-color: black;
-  border-style: dashed; */
+  border: 1px;
+  border-color: black;
+  border-style: dashed;
 
   position: absolute;
   top: 0;
   left: 0;
-  right: 0;
 }
 
-/* .welcome-image {
-  position:relative;
-  height:auto;
-  width:auto;
-} */
-
-.welcome img {
+.header img {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  display:block;
+  display: flex;
 }
 
-.welcome h1 {
+.header h1 {
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #AC876C;
+  -webkit-text-stroke: 1px #BDD2E3;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 18px;
+  font-size: 70px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.header-name-offset {
+  width: 0px;
+  bottom: 50%;
+  left: 50%;
+  position: absolute;
+  background-color: red; /* A color just for debug */
+}
+
+.header-name {
+  margin-bottom: 200px;
+  width: auto;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  border: 1px;
+  border-color: black;
+  border-style: dashed;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../assets/flight-gallery/flight-4.jpg");
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
