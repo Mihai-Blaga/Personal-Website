@@ -1,13 +1,24 @@
+h1, h2, h3, h4, h5, p {
+  color: #BDD2E3;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  white-space: nowrap;
+}
+
+h1 {
+  padding: 18px;
+  font-size: 70px;
+}
+
+/* Used for the header which consists of an image and some text. */
 .header {
   height: 100%;
   width: 100%;
-  border: 1px;
-  border-color: black;
-  border-style: dashed;
 
   position: absolute;
   top: 0;
   left: 0;
+  
 }
 
 .header img {
@@ -22,41 +33,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #AC876C;
+  
   -webkit-text-stroke: 1px #BDD2E3;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 18px;
-  font-size: 70px;
-  text-align: center;
-  white-space: nowrap;
+  color: #AC876C;
 }
 
-.header-name-offset {
-  width: 0px;
-  bottom: 50%;
-  left: 50%;
-  position: absolute;
-  background-color: red; /* A color just for debug */
-}
-
-.header-name {
-  margin-bottom: 200px;
-  width: auto;
-}
-
-.body {
-  height: 100%;
-  width: 100%;
-  border: 1px;
-  border-color: black;
-  border-style: dashed;
-
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-
-.parallax {
+/* The parallax effect used on the header image. */
+.header-image {
   /* The image used */
   background-image: url("../assets/flight-gallery/flight-4.jpg");
   height: 100%;
@@ -67,3 +50,60 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* Used to align the header text to just above the wing */
+.header-name-offset {
+  width: 0px;
+  bottom: 50%;
+  left: 50%;
+  position: absolute;
+}
+
+.header-name {
+  margin-bottom: 200px;
+  width: auto;
+}
+
+/* Used for the body, containing all the content. */
+.intro {
+  height: 100%;
+  width: 100%;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: #BDD2E3;
+}
+
+.intro-text {
+  background-color: #72774E;
+  width: auto;
+  height: 90%;
+  text-align: center;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+
+  border: 15px;
+  border-color: #72774E;
+  border-style: solid;
+  margin: 15px;
+}
+
+.intro img {
+  height: 90%;
+  width: auto;
+
+  border: 15px;
+  border-color: #72774E;
+  border-style: solid;
+}
+
